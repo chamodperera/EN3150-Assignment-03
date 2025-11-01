@@ -1,9 +1,25 @@
 # Waste Classification (RealWaste)
 
-## 1) Project Introduction
+Short overview and quick run steps for EN3150 – Learning from Data.
 
-This repository contains our coursework implementation for *EN3150 – Learning from Data. The goal is to build and evaluate image classifiers for the **RealWaste* dataset (9 classes; real‑world landfill images) and to compare a *custom CNN trained from scratch* against *transfer‑learning* baselines.
+## What’s inside
 
-### Why this project?
+- `CNN_comparison.ipynb`: Transfer‑learning baselines (compare pre‑trained CNNs).
+- `Custom_CNN_Classifier.ipynb`: CNN trained from scratch for the 9 RealWaste classes.
 
-RealWaste classification supports practical recycling workflows by automatically identifying material categories such as Cardboard, Paper, Plastic, Metal, Glass, Food Organics, Textile Trash, Vegetation, and Miscellaneous Trash. The dataset is moderately sized and imbalanced, making it a good testbed for modern training practices (augmentation, schedulers, early stopping) and for leveraging pre‑trained vision backbones.
+## Requirements
+
+- Python 3.8+ and Jupyter.
+- Common libs: numpy, pandas, matplotlib, scikit‑learn, torch/torchvision.
+
+## How to run (Windows PowerShell)
+
+1. Start Jupyter: `jupyter notebook`.
+2. Open a notebook and run all cells.
+   - Use `CNN_comparison.ipynb` to evaluate transfer learning.
+   - Use `Custom_CNN_Classifier.ipynb` to train the custom CNN.
+
+## Notes
+
+- Dataset: RealWaste (9 classes). Expect class imbalance; augmentation and early stopping help.
+- Results: compare accuracy/F1 across custom vs transfer‑learning models.
